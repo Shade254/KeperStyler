@@ -1,0 +1,72 @@
+h3 {
+  color: black;
+}
+
+#divStyles {
+ display: grid;
+}
+
+.selector {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 2px;
+  border-radius: 4px;
+  background-color: lightgrey;
+  padding: 3px;
+}
+
+.buttonWrapper {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.selectorLabel {
+  float: left;
+  color: black;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.deleteButton {
+  float: right;
+  background-color: #df6c6c;
+  background-image: url("../images/delete.png");
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.loadButton {
+  float: right;
+  background-color: #79c14b;
+  background-image: url("../images/load.png");
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.about {
+  color: grey;
+  text-align: center;
+  margin: 1px;
+  font-size: 7px;
+}
+
+.mapboxInputWrapper {
+  display: grid;
+}
+
+.mapboxInput {
+  margin: 3px;
+}
+
+a:hover, a:active {
+  background-color: hotpink;
+  text-decoration: underline;
+}
+
