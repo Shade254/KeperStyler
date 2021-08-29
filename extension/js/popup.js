@@ -11,9 +11,9 @@ function updateStylesFromStorage() {
             while (node.firstChild) {
                 node.removeChild(node.lastChild);
             }
-            
-            if(result.mapbox_styles == null) {
-                result.mapbox_styles = [];   
+
+            if (result.mapbox_styles == null) {
+                result.mapbox_styles = [];
             }
 
             for (index = 0; index < result.mapbox_styles.length; index++) {
@@ -209,8 +209,8 @@ function saveStyleToStorage(url, token, name) {
     }
 
     chrome.storage.sync.get(['mapbox_styles'], function(result) {
-        if(result.mapbox_styles == null) {
-            result.mapbox_styles = [];   
+        if (result.mapbox_styles == null) {
+            result.mapbox_styles = [];
         }
 
         for (index = 0; index < result.mapbox_styles.length; index++) {

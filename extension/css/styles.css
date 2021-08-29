@@ -3,7 +3,7 @@ h3 {
 }
 
 #divStyles {
- display: grid;
+  display: grid;
 }
 
 .selector {
@@ -17,8 +17,8 @@ h3 {
 }
 
 .buttonWrapper {
-    display: inline-flex;
-    margin-left: auto;
+  display: inline-flex;
+  margin-left: auto;
 }
 
 .selectorLabel {
@@ -65,8 +65,8 @@ h3 {
   margin: 3px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: hotpink;
   text-decoration: underline;
 }
-
