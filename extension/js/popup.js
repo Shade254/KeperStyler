@@ -25,28 +25,34 @@ function updateStylesFromStorage() {
                 var selectorLabel = document.createElement('div');
                 selectorLabel.innerHTML = n;
                 selectorLabel.classList.add('selectorLabel');
-
-                var buttonWrapper = document.createElement('div');
-                buttonWrapper.classList.add('buttonWrapper');
+                selector.appendChild(selectorLabel);
 
                 if (isKepler) {
                     var loadButton = document.createElement('button');
+
+                    var gridItem = document.createElement('div');
+                    gridItem.classList.add('gridItem2');
+
                     loadButton.classList.add('loadButton');
                     loadButton.name = n;
                     loadButton.addEventListener('click', (event) => loadStyleFromStorage(event), false);
-                    buttonWrapper.appendChild(loadButton);
+
+                    gridItem.appendChild(loadButton)
+                    selector.appendChild(gridItem);
                 }
 
 
                 var deleteButton = document.createElement('button');
+                var gridItem = document.createElement('div');
+                gridItem.classList.add('gridItem1');
+
                 deleteButton.classList.add('deleteButton');
                 deleteButton.name = n;
                 deleteButton.addEventListener('click', (event) => deleteStyleFromStorage(event), false);
-                buttonWrapper.appendChild(deleteButton);
+                gridItem.appendChild(deleteButton)
+                selector.appendChild(gridItem);
 
 
-                selector.appendChild(selectorLabel);
-                selector.appendChild(buttonWrapper);
                 document.getElementById('divStyles').appendChild(selector);
             }
         });
